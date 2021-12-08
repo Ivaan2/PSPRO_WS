@@ -1,0 +1,13 @@
+ El volumen de la unidad C no tiene etiqueta.
+ El n�mero de serie del volumen es: 2219-C8D9
+
+ Directorio de C:\Users\ivanm\IdeaProjects\PSPRO_WS
+
+01/11/2021  17:42    <DIR>          .
+02/11/2021  16:58    <DIR>          ..
+11/11/2021  18:59    <DIR>          .idea
+01/11/2021  17:42    <DIR>          out
+01/11/2021  17:42               433 PSPRO_WS.iml
+10/11/2021  21:42    <DIR>          src
+               1 archivos            433 bytes
+               5 dirs  156.849.995.776 bytes libres
