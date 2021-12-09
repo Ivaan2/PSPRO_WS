@@ -15,13 +15,14 @@ public class Taxi {
         kmCarretera = 0;
         if(!disponible){
             try {
-                wait(100);
+                wait();
             } catch (InterruptedException e) {
                 e.printStackTrace();
             }
         }else{
             System.out.println(c.getNombreCliente() + " usa el taxi");
             disponible = false;
+            notifyAll();
         }
     }
 
@@ -29,7 +30,7 @@ public class Taxi {
         kmCarretera = c.getNumKm();
         if(disponible){
             try {
-                wait(100);
+                wait();
             } catch (InterruptedException e) {
                 e.printStackTrace();
             }
@@ -37,6 +38,7 @@ public class Taxi {
             precioImporte = calcularImporte();
             System.out.println(c.getNombreCliente() + " termina el servicio. Importe: " + this.precioImporte + " $.");
             disponible = true;
+            notifyAll();
         }
     }
 
