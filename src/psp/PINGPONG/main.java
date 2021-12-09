@@ -11,6 +11,8 @@ public class main {
 
         Thread Ping = new Thread(partida);
 
+        //Los métodos se sincronizan y se ejecuta en bucle al llamar a la función start
+        //del objeto Ping
         Ping.start();
     }
 }
